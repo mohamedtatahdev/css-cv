@@ -1,0 +1,49 @@
+@keyframes bounce {
+    0% {
+      transform: rotate(-45deg);
+    }
+    10% {
+      transform: rotate(-35deg);
+    }
+    70% {
+      transform: rotate(20deg);
+    }
+    80% {
+      transform: rotate(-10deg);
+    }
+    90% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes spin-2 {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+  
+  .spin {
+    animation-name: spin-2;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  
+  .spin-2 {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  
